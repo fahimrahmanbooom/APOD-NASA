@@ -7,6 +7,7 @@ target 'APOD NASA' do
 
   # Pods for APOD NASA
   
-  pod 'Alamofire', '~> 5.0.0-rc.3'
+  pod 'Alamofire'
+  pod 'Kingfisher'
 
 end

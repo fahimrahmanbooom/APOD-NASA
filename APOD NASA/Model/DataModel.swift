@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct Data : Decodable {
-
-let date : String?
-let explanation : String?
-let url : String?
-let title : String?
-
+struct NasaData : Codable {
+    
+    let date : String?
+    let explanation : String?
+    let url : String?
+    let title : String?
+    
 }

@@ -82,16 +82,48 @@
 		FF0BCB0923A76824005010CE /* APOD NASA */ = {
 			isa = PBXGroup;
 			children = (
-				FF0BCB0A23A76824005010CE /* AppDelegate.swift */,
-				FF0BCB0C23A76824005010CE /* SceneDelegate.swift */,
-				FF0BCB0E23A76824005010CE /* ViewController.swift */,
-				FF0BCB1E23A77F76005010CE /* DataModel.swift */,
-				FF0BCB1023A76824005010CE /* Main.storyboard */,
+				FF86327625781D41002C6053 /* Model */,
+				FF86327725781D47002C6053 /* View */,
+				FF86327825781D4D002C6053 /* Controller */,
+				FF86327925781D6F002C6053 /* Support */,
 				FF0BCB1323A76825005010CE /* Assets.xcassets */,
 				FF0BCB1523A76825005010CE /* LaunchScreen.storyboard */,
 				FF0BCB1823A76825005010CE /* Info.plist */,
 			);
 			path = "APOD NASA";
+			sourceTree = "<group>";
+		};
+		FF86327625781D41002C6053 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF0BCB1E23A77F76005010CE /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF86327725781D47002C6053 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF0BCB1023A76824005010CE /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF86327825781D4D002C6053 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF0BCB0E23A76824005010CE /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF86327925781D6F002C6053 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				FF0BCB0A23A76824005010CE /* AppDelegate.swift */,
+				FF0BCB0C23A76824005010CE /* SceneDelegate.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +155,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Fahim Rahman";
 				TargetAttributes = {
 					FF0BCB0623A76824005010CE = {
@@ -168,17 +200,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-APOD NASA/Pods-APOD NASA-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APOD NASA/Pods-APOD NASA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APOD NASA/Pods-APOD NASA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APOD NASA/Pods-APOD NASA-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-APOD NASA/Pods-APOD NASA-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DEC2213CCB1B18811CAAD109 /* [CP] Check Pods Manifest.lock */ = {
@@ -261,6 +292,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -321,6 +353,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
